@@ -71,6 +71,10 @@ body {
     color: rgb(115, 94, 235)
 }
 
+img {
+    margin-bottom: 5vh;
+}
+
 
 /* Works on Firefox */
 * {
