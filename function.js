@@ -56,7 +56,8 @@ function applyAlternateBackgroundColors() {
     });
 }
 
-const invertButton = document.querySelector('.invert-button');
+try {
+    const invertButton = document.querySelector('.invert-button');
 const content = document.body
 var isDark = true;
 
@@ -120,42 +121,49 @@ invertButton.addEventListener('click', () => {
         menuElement.classList.toggle("opacity");
     }
 });
-
+}
+catch{}
 
 var Menus = [
-    {Type: "box", Emoji: "🤖", Title: "AI Chatbot", Color: "#cdc4d6", Link: "pages/chatbot/"},
+    {Type: "box", Emoji: "🤖", Title: "AI Chatbot", Color: "#cdc4d6", MenuID: 0, OnclickID: 1, Link: "pages/special/chatbot/"},
 
-    {Type: "box", Emoji: "📊", Title: "Maths", Color: "#E1D8EC", MenuID: 0, OnclickID: 1},
-    {Type: "menu", Emoji: "ⓘ", Title: "Maths Info", MenuID: 1, OnclickID: 7},
-    {Type: "menu", Emoji: "🔢", Title: "Law of Indicies", MenuID: 1, OnclickID: 13},
-
-
-    {Type: "box", Emoji: "🦠", Title: "Biology", Color: "#00F397", MenuID: 0, OnclickID: 2},
-    {Type: "menu", Emoji: "ⓘ", Title: "Biology Info", MenuID: 2, OnclickID: 8},
-    {Type: "menu", Emoji: "🧫", Title: "Cell Division", MenuID: 2, OnclickID: 14},
-    {Type: "menu-direct", Emoji: "🧬", Title: "Mitosis", MenuID: 14, OnclickID: 20, Link: "pages/biology/mitosis/"},
-    {Type: "menu-direct", Emoji: "🦠", Title: "Cytokinesis", MenuID: 14, OnclickID: 21, Link: "pages/biology/cytokinesis/"},
+    {Type: "box", Emoji: "📊", Title: "Maths", Color: "#E1D8EC", MenuID: 0, OnclickID: 2},
+    {Type: "menu-direct", Emoji: "ⓘ", Title: "Maths Info", MenuID: 2, OnclickID: 9, Link: "pages/maths/info/"},
+    {Type: "menu-direct", Emoji: "🔢", Title: "Law of Indicies", MenuID: 2, OnclickID: 10, Link: "pages/maths/indicies-law/"},
+    {Type: "menu-direct", Emoji: "∛", Title: "Surds", MenuID: 2, OnclickID: 11, Link: "pages/maths/surds/"},
 
 
-    {Type: "box", Emoji: "⚗️", Title: "Chemistry", Color: "#aeddff", MenuID: 0, OnclickID: 3},
-    {Type: "menu", Emoji: "ⓘ", Title: "Chemistry Info", MenuID: 3, OnclickID: 9},
+    {Type: "box", Emoji: "🦠", Title: "Biology", Color: "#00F397", MenuID: 0, OnclickID: 3},
+    {Type: "menu-direct", Emoji: "ⓘ", Title: "Biology Info", MenuID: 3, OnclickID: 12, Link: "pages/biology/info/"},
+    {Type: "menu", Emoji: "🧫", Title: "Cell Division", MenuID: 3, OnclickID: 13},
+    {Type: "menu-direct", Emoji: "🧬", Title: "Mitosis", MenuID: 13, OnclickID: 14, Link: "pages/biology/mitosis/"},
+    {Type: "menu-direct", Emoji: "🦠", Title: "Cytokinesis", MenuID: 13, OnclickID: 15, Link: "pages/biology/cytokinesis/"},
+    {Type: "menu", Emoji: "🦠", Title: "Stem Cells", MenuID: 3, OnclickID: 16},
 
 
-    {Type: "box", Emoji: "🧲", Title: "Physics", Color: "#F8312F", MenuID: 0, OnclickID: 4},
-    {Type: "menu", Emoji: "ⓘ", Title: "Physics Info", MenuID: 4, OnclickID: 10},
-    {Type: "menu", Emoji: "🔥", Title: "Heat / Energy transfer", MenuID: 4, OnclickID: 15},
-    {Type: "menu-direct", Emoji: "💥", Title: "Infra-red radiation", MenuID: 15, OnclickID: 17, Link: "pages/physics/infra-red-radiation/"},
-    {Type: "menu-direct", Emoji: "🔥", Title: "Conduction", MenuID: 15, OnclickID: 18, Link: "pages/physics/conduction/"},
-    {Type: "menu-direct", Emoji: "💨", Title: "Convection", MenuID: 15, OnclickID: 19, Link: "pages/physics/convection/"},
+    {Type: "box", Emoji: "⚗️", Title: "Chemistry", Color: "#aeddff", MenuID: 0, OnclickID: 4},
+    {Type: "menu-direct", Emoji: "ⓘ", Title: "Chemistry Info", MenuID: 4, OnclickID: 17, Link: "pages/chemistry/info/"},
 
 
-    {Type: "box", Emoji: "🖥️", Title: "Computing", Color: "#26c9fc", MenuID: 0, OnclickID: 5},
-    {Type: "menu", Emoji: "ⓘ", Title: "Computing Info", MenuID: 5, OnclickID: 11},
-    {Type: "menu", Emoji: "📦", Title: "Data Storage", MenuID: 5, OnclickID: 16},
+    {Type: "box", Emoji: "🧲", Title: "Physics", Color: "#F8312F", MenuID: 0, OnclickID: 5},
+    {Type: "menu-direct", Emoji: "ⓘ", Title: "Physics Info", MenuID: 5, OnclickID: 18, Link: "pages/physics/info/"},
+    {Type: "menu", Emoji: "🔥", Title: "Heat / Energy transfer", MenuID: 5, OnclickID: 19},
+    {Type: "menu-direct", Emoji: "💥", Title: "Infra-red radiation", MenuID: 8, OnclickID: 20, Link: "pages/physics/infra-red-radiation/"},
+    {Type: "menu-direct", Emoji: "🔥", Title: "Conduction", MenuID: 8, OnclickID: 21, Link: "pages/physics/conduction/"},
+    {Type: "menu-direct", Emoji: "💨", Title: "Convection", MenuID: 8, OnclickID: 22, Link: "pages/physics/convection/"},
 
 
-    {Type: "box", Emoji: "🌍", Title: "Geography", Color: "#00d26a", MenuID: 0, OnclickID: 6},
-    {Type: "menu", Emoji: "ⓘ", Title: "Geography Info", MenuID: 6, OnclickID: 12},
+    {Type: "box", Emoji: "🖥️", Title: "Computing", Color: "#26c9fc", MenuID: 0, OnclickID: 6},
+    {Type: "menu-direct", Emoji: "ⓘ", Title: "Computing Info", MenuID: 6, OnclickID: 23, Link: "pages/computing/info/"},
+    {Type: "menu", Emoji: "📦", Title: "Data Storage", MenuID: 6, OnclickID: 9},
+
+
+    {Type: "box", Emoji: "🌍", Title: "Geography", Color: "#00d26a", MenuID: 0, OnclickID: 7},
+    {Type: "menu-direct", Emoji: "ⓘ", Title: "Geography Info", MenuID: 7, OnclickID: 24, Link: "pages/geography/info/"},
+    {Type: "menu-drift", Emoji: "🗺️", Title: "Continental Drift", MenuID: 7, OnclickID: 25, Link: "pages/geography/continental-drift/"},
+
+
+    {Type: "box", Emoji: "🗒️", Title: "Notepad", Color: "#f3eef8", MenuID: 0, OnclickID: 8, Link: "pages/special/notepad/"},
 ]
 
 function MakeMenu() {
@@ -179,7 +187,7 @@ function MakeMenu() {
             Title.classList.add("menu-title");
             Arrow.classList.add("menu-arrow");
         }
-        if (CurrentMenu.Type === "menu-direct" || CurrentMenu.Title == "AI Chatbot") {
+        if (CurrentMenu.Type === "menu-direct" || CurrentMenu.Title == "AI Chatbot" || CurrentMenu.Title == "Notepad") {
             Outer.onclick = function() {
                 window.open(CurrentMenu.Link + "index.html", "_self")
             }
@@ -194,6 +202,7 @@ function MakeMenu() {
         Title.textContent = CurrentMenu.Title;
         Title.style.color = CurrentMenu.Color
         Arrow.textContent = "➜"
+        Arrow.style.color = CurrentMenu.Color
 
         Outer.setAttribute("menu-id", CurrentMenu.MenuID)
         Outer.setAttribute("menu-onclick", CurrentMenu.OnclickID)
@@ -224,17 +233,18 @@ function findPathToMenu(Menus, targetOnclickID) {
     const path = [];
 
     function findPathRecursive(currentOnclickID) {
-        for (const menuItem of Menus) {
-            if (menuItem.OnclickID === currentOnclickID) {
-                path.unshift([menuItem.MenuID, menuItem.OnclickID]);
-                if (menuItem.MenuID === 0) {
-                    return; // Reached the top-level menu
-                }
-                findPathRecursive(menuItem.MenuID);
-                return;
-            }
+    if (currentOnclickID === 0) {
+        return; // Reached the top-level menu, terminate recursion
+    }
+
+    for (const menuItem of Menus) {
+        if (menuItem.OnclickID === currentOnclickID) {
+            path.unshift([menuItem.MenuID, menuItem.OnclickID]);
+            findPathRecursive(menuItem.MenuID);
+            return; // Terminate recursion after finding the menu
         }
     }
+}
 
     findPathRecursive(targetOnclickID);
     if (document.querySelector(".search-bar").value.length > 0) {
