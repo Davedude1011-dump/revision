@@ -128,14 +128,12 @@ var Menus = [
     {Type: "box", Emoji: "🤖", Title: "AI Chatbot", Color: "#cdc4d6", MenuID: 0, OnclickID: 1, Link: "pages/special/chatbot/"},
 
     {Type: "box", Emoji: "📊", Title: "Maths", Color: "#E1D8EC", MenuID: 0, OnclickID: 2},
-    {Type: "menu-direct", Emoji: "ⓘ", Title: "Maths Info", MenuID: 2, OnclickID: 9, Link: "pages/maths/info/"},
     {Type: "menu-direct", Emoji: "🔢", Title: "Law of Indices", MenuID: 2, OnclickID: 10, Link: "pages/maths/indices/"},
     {Type: "menu-direct", Emoji: "∛", Title: "Surds", MenuID: 2, OnclickID: 11, Link: "pages/maths/surds/"},
     {Type: "menu-direct", Emoji: "(x)(y)", Title: "Expanding Brackets", MenuID: 2, OnclickID: 26, Link: "pages/maths/expanding-brackets/"},
 
 
     {Type: "box", Emoji: "🦠", Title: "Biology", Color: "#00F397", MenuID: 0, OnclickID: 3},
-    {Type: "menu-direct", Emoji: "ⓘ", Title: "Biology Info", MenuID: 3, OnclickID: 12, Link: "pages/biology/info/"},
     {Type: "menu", Emoji: "🧫", Title: "Cell Division", MenuID: 3, OnclickID: 13},
     {Type: "menu-direct", Emoji: "🧬", Title: "Mitosis", MenuID: 13, OnclickID: 14, Link: "pages/biology/mitosis/"},
     {Type: "menu-direct", Emoji: "🦠", Title: "Cytokinesis", MenuID: 13, OnclickID: 15, Link: "pages/biology/cytokinesis/"},
@@ -143,25 +141,21 @@ var Menus = [
 
 
     {Type: "box", Emoji: "⚗️", Title: "Chemistry", Color: "#aeddff", MenuID: 0, OnclickID: 4},
-    {Type: "menu-direct", Emoji: "ⓘ", Title: "Chemistry Info", MenuID: 4, OnclickID: 17, Link: "pages/chemistry/info/"},
     {Type: "menu-direct", Emoji: "⚛️", Title: "Ionic Bonds", MenuID: 4, OnclickID: 27, Link: "pages/chemistry/ionic-bonds/"},
 
 
     {Type: "box", Emoji: "🧲", Title: "Physics", Color: "#F8312F", MenuID: 0, OnclickID: 5},
-    {Type: "menu-direct", Emoji: "ⓘ", Title: "Physics Info", MenuID: 5, OnclickID: 18, Link: "pages/physics/info/"},
     {Type: "menu", Emoji: "🔥", Title: "Heat / Energy transfer", MenuID: 5, OnclickID: 19},
-    {Type: "menu-direct", Emoji: "💥", Title: "Infra-red radiation", MenuID: 8, OnclickID: 20, Link: "pages/physics/infra-red-radiation/"},
-    {Type: "menu-direct", Emoji: "🔥", Title: "Conduction", MenuID: 8, OnclickID: 21, Link: "pages/physics/conduction/"},
-    {Type: "menu-direct", Emoji: "💨", Title: "Convection", MenuID: 8, OnclickID: 22, Link: "pages/physics/convection/"},
+    {Type: "menu-direct", Emoji: "💥", Title: "Infra-red radiation", MenuID: 19, OnclickID: 20, Link: "pages/physics/infra-red-radiation/"},
+    {Type: "menu-direct", Emoji: "🔥", Title: "Conduction", MenuID: 19, OnclickID: 21, Link: "pages/physics/conduction/"},
+    {Type: "menu-direct", Emoji: "💨", Title: "Convection", MenuID: 19, OnclickID: 22, Link: "pages/physics/convection/"},
 
 
     {Type: "box", Emoji: "🖥️", Title: "Computing", Color: "#26c9fc", MenuID: 0, OnclickID: 6},
-    {Type: "menu-direct", Emoji: "ⓘ", Title: "Computing Info", MenuID: 6, OnclickID: 23, Link: "pages/computing/info/"},
     {Type: "menu", Emoji: "📦", Title: "Data Storage", MenuID: 6, OnclickID: 9},
 
 
     {Type: "box", Emoji: "🌍", Title: "Geography", Color: "#00d26a", MenuID: 0, OnclickID: 7},
-    {Type: "menu-direct", Emoji: "ⓘ", Title: "Geography Info", MenuID: 7, OnclickID: 24, Link: "pages/geography/info/"},
     {Type: "menu-direct", Emoji: "🏞️", Title: "Continental Drift & Tectonic Plates", MenuID: 7, OnclickID: 25, Link: "pages/geography/continental-drift/"},
 
 
@@ -268,6 +262,14 @@ function findPathToMenu(Menus, targetOnclickID) {
 // Add an event listener to your input box
 const inputBox = document.querySelector(".search-bar"); // Replace with the actual class name of your input box
 
+document.addEventListener("keydown", function (event) {
+    // Check if the key pressed is a letter or a valid character for the search query
+    if (/^[a-zA-Z0-9\s]+$/.test(event.key)) {
+        // If it is, focus on the input box
+        inputBox.focus();
+    }
+});
+
 inputBox.addEventListener("input", function () {
     const inputValue = inputBox.value.toLowerCase(); // Convert input value to lowercase for case-insensitive matching
     const menuItems = document.querySelectorAll(".menu-hover");
@@ -277,14 +279,14 @@ inputBox.addEventListener("input", function () {
     }
     const menuElements = document.querySelectorAll(".menu-search");
 
-    menuElements.forEach((CurrentElement, i) => {
-        CurrentElement.classList.remove("menu-search")
+    menuElements.forEach((currentElement, i) => {
+        currentElement.classList.remove("menu-search");
     });
 
     for (const menuItem of Menus) {
         if (menuItem.Title.toLowerCase().includes(inputValue)) {
-            findPathToMenu(Menus, menuItem.OnclickID)
-            console.log(menuItem.OnclickID)
+            findPathToMenu(Menus, menuItem.OnclickID);
+            console.log(menuItem.OnclickID);
         }
     }
 });
