@@ -157,6 +157,9 @@ var Menus = [
 
     {Type: "box", Emoji: "🌍", Title: "Geography", Color: "#00d26a", MenuID: 0, OnclickID: 7},
     {Type: "menu-direct", Emoji: "🏞️", Title: "Continental Drift & Tectonic Plates", MenuID: 7, OnclickID: 25, Link: "pages/geography/continental-drift/"},
+    {Type: "menu", Emoji: "⛰️", Title: "Earthquakes", MenuID: 7, OnclickID: 28, Link: "pages/geography/earthquake/"},
+    {Type: "menu-direct", Emoji: "🏞️", Title: "Overview", MenuID: 28, OnclickID: 25, Link: "pages/geography/earthquake-overview/"},
+    {Type: "menu-direct", Emoji: "🏞️", Title: "LIC vs HIC", MenuID: 28, OnclickID: 25, Link: "pages/geography/earthquake-lic-hic/"},
 
 
     {Type: "box", Emoji: "🗒️", Title: "Notepad", Color: "#f3eef8", MenuID: 0, OnclickID: 8, Link: "pages/special/notepad/"},
