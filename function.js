@@ -129,8 +129,16 @@ var Menus = [
 
     {Type: "box", Emoji: "📊", Title: "Maths", Color: "#E1D8EC", MenuID: 0, OnclickID: 2},
     {Type: "menu-direct", Emoji: "🔢", Title: "Law of Indices", MenuID: 2, OnclickID: 10, Link: "pages/maths/indices/"},
-    {Type: "menu-direct", Emoji: "∛", Title: "Surds", MenuID: 2, OnclickID: 11, Link: "pages/maths/surds/"},
+    {Type: "menu", Emoji: "∛", Title: "Surds", MenuID: 2, OnclickID: 11},
+    {Type: "menu-direct", Emoji: "📖", Title: "Overview", MenuID: 11, OnclickID: 31, Link: "pages/maths/surds-overview/"},
+    {Type: "menu-direct", Emoji: "½", Title: "Rationalising Surds", MenuID: 11, OnclickID: 32, Link: "pages/maths/rationalising-surds/"},
     {Type: "menu-direct", Emoji: "(x)(y)", Title: "Expanding Brackets", MenuID: 2, OnclickID: 26, Link: "pages/maths/expanding-brackets/"},
+
+    {Type: "box", Emoji: "🚀", Title: "Maths+", Color: "#ff8257", MenuID: 0, OnclickID: 33},
+    {Type: "menu", Emoji: "📈", Title: "Binomial Expansion", MenuID: 33, OnclickID: 34},
+    {Type: "menu-direct", Emoji: "ⓘ", Title: "Binomial Expansion - Overview", MenuID: 34, OnclickID: 35, Link: "pages/maths+/binomial-expansion/"},
+    {Type: "menu-direct", Emoji: "△", Title: "Pascals Triangle - Info", MenuID: 34, OnclickID: 36, Link: "pages/maths+/pascals-triangle/"},
+    {Type: "menu-direct", Emoji: "▲", Title: "Pascals Triangle - Visual", MenuID: 34, OnclickID: 37, Link: "pages/maths+/pascals-triangle-visual/"},
 
 
     {Type: "box", Emoji: "🦠", Title: "Biology", Color: "#00F397", MenuID: 0, OnclickID: 3},
@@ -158,8 +166,8 @@ var Menus = [
     {Type: "box", Emoji: "🌍", Title: "Geography", Color: "#00d26a", MenuID: 0, OnclickID: 7},
     {Type: "menu-direct", Emoji: "🏞️", Title: "Continental Drift & Tectonic Plates", MenuID: 7, OnclickID: 25, Link: "pages/geography/continental-drift/"},
     {Type: "menu", Emoji: "⛰️", Title: "Earthquakes", MenuID: 7, OnclickID: 28, Link: "pages/geography/earthquake/"},
-    {Type: "menu-direct", Emoji: "🏞️", Title: "Overview", MenuID: 28, OnclickID: 25, Link: "pages/geography/earthquake-overview/"},
-    {Type: "menu-direct", Emoji: "🏞️", Title: "LIC vs HIC", MenuID: 28, OnclickID: 25, Link: "pages/geography/earthquake-lic-hic/"},
+    {Type: "menu-direct", Emoji: "🏞️", Title: "Overview", MenuID: 28, OnclickID: 29, Link: "pages/geography/earthquake-overview/"},
+    {Type: "menu-direct", Emoji: "🏞️", Title: "LIC vs HIC", MenuID: 28, OnclickID: 30, Link: "pages/geography/earthquake-lic-hic/"},
 
 
     {Type: "box", Emoji: "🗒️", Title: "Notepad", Color: "#f3eef8", MenuID: 0, OnclickID: 8, Link: "pages/special/notepad/"},
