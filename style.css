@@ -145,6 +145,7 @@ body {
     opacity: 0;
 
     transition: 0.4s;
+    color: inherit
 }
 
 .menu:hover .menu-icon, .menu:hover .menu-arrow, .menu-hover .menu-icon, .menu-hover .menu-arrow {

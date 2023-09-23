@@ -133,6 +133,7 @@ var Menus = [
     {Type: "menu-direct", Emoji: "📖", Title: "Overview", MenuID: 11, OnclickID: 31, Link: "pages/maths/surds-overview/"},
     {Type: "menu-direct", Emoji: "½", Title: "Rationalising Surds", MenuID: 11, OnclickID: 32, Link: "pages/maths/rationalising-surds/"},
     {Type: "menu-direct", Emoji: "(x)(y)", Title: "Expanding Brackets", MenuID: 2, OnclickID: 26, Link: "pages/maths/expanding-brackets/"},
+    {Type: "menu-direct", Emoji: "🧭", Title: "Bearings", MenuID: 2, OnclickID: 50, Link: "pages/maths/bearings/"},
 
     {Type: "box", Emoji: "🚀", Title: "Maths+", Color: "#ff8257", MenuID: 0, OnclickID: 33},
     {Type: "menu", Emoji: "📈", Title: "Binomial Expansion", MenuID: 33, OnclickID: 34},
@@ -146,21 +147,34 @@ var Menus = [
     {Type: "menu-direct", Emoji: "🧬", Title: "Mitosis", MenuID: 13, OnclickID: 14, Link: "pages/biology/mitosis/"},
     {Type: "menu-direct", Emoji: "🦠", Title: "Cytokinesis", MenuID: 13, OnclickID: 15, Link: "pages/biology/cytokinesis/"},
     {Type: "menu-direct", Emoji: "🦠", Title: "Stem Cells", MenuID: 3, OnclickID: 16, Link: "pages/biology/stem-cells/"},
+    {Type: "menu", Emoji: "🫀", Title: "Enzymes", MenuID: 3, OnclickID: 47},
+    {Type: "menu-direct", Emoji: "🌮", Title: "main digestive enzymes", MenuID: 47, OnclickID: 48, Link: "pages/biology/main-digestive-enzymes/"},
 
 
     {Type: "box", Emoji: "⚗️", Title: "Chemistry", Color: "#aeddff", MenuID: 0, OnclickID: 4},
     {Type: "menu-direct", Emoji: "⚛️", Title: "Ionic Bonds", MenuID: 4, OnclickID: 27, Link: "pages/chemistry/ionic-bonds/"},
+    {Type: "menu-direct", Emoji: "⚛️", Title: "Covalent Bonds", MenuID: 4, OnclickID: 38, Link: "pages/chemistry/covalent-bonds/"},
 
 
     {Type: "box", Emoji: "🧲", Title: "Physics", Color: "#F8312F", MenuID: 0, OnclickID: 5},
+    {Type: "menu-direct", Emoji: "📦", Title: "Formula Storage", MenuID: 5, OnclickID: 51, Link: "pages/physics/formula-storage/"},
     {Type: "menu", Emoji: "🔥", Title: "Heat / Energy transfer", MenuID: 5, OnclickID: 19},
     {Type: "menu-direct", Emoji: "💥", Title: "Infra-red radiation", MenuID: 19, OnclickID: 20, Link: "pages/physics/infra-red-radiation/"},
     {Type: "menu-direct", Emoji: "🔥", Title: "Conduction", MenuID: 19, OnclickID: 21, Link: "pages/physics/conduction/"},
     {Type: "menu-direct", Emoji: "💨", Title: "Convection", MenuID: 19, OnclickID: 22, Link: "pages/physics/convection/"},
+    {Type: "menu-direct", Emoji: "♨️", Title: "Specific Heat Capacity", MenuID: 5, OnclickID: 49, Link: "pages/physics/specific-heat-capacity/"},
 
 
     {Type: "box", Emoji: "🖥️", Title: "Computing", Color: "#26c9fc", MenuID: 0, OnclickID: 6},
-    {Type: "menu", Emoji: "📦", Title: "Data Storage", MenuID: 6, OnclickID: 9},
+    {Type: "menu-direct", Emoji: "📦", Title: "Data Storage", MenuID: 6, OnclickID: 9, Link: "pages/computing/data-storage/"},
+    {Type: "menu", Emoji: "µ", Title: "Unit Conversion", MenuID: 6, OnclickID: 44},
+    {Type: "menu-direct", Emoji: "✨", Title: "Denary ⇆ Binary", MenuID: 44, OnclickID: 45, Link: "pages/computing/denary-binary/"},
+    {Type: "menu-direct", Emoji: "✨", Title: "Denary ⇆ Hexidecimal", MenuID: 44, OnclickID: 46, Link: "pages/computing/denary-hex/"},
+    {Type: "menu", Emoji: "01", Title: "Binary Arithmetic", MenuID: 6, OnclickID: 39},
+    {Type: "menu-direct", Emoji: "+01", Title: "Binary Addition", MenuID: 39, OnclickID: 40, Link: "pages/computing/binary-addition/"},
+    {Type: "menu-direct", Emoji: "-01", Title: "Binary Subtraction", MenuID: 39, OnclickID: 41, Link: "pages/computing/binary-subtraction/"},
+    {Type: "menu-direct", Emoji: "←01→", Title: "Binary Shifting", MenuID: 39, OnclickID: 42, Link: "pages/computing/binary-shifting/"},
+    {Type: "menu-direct", Emoji: "01?", Title: "Binary Overflow", MenuID: 39, OnclickID: 43, Link: "pages/computing/binary-overflow/"},
 
 
     {Type: "box", Emoji: "🌍", Title: "Geography", Color: "#00d26a", MenuID: 0, OnclickID: 7},
@@ -182,6 +196,8 @@ function MakeMenu() {
         let Title = document.createElement("div");
         let Arrow = document.createElement("div");
 
+        Arrow.textContent = "➜"
+
         if (CurrentMenu.Type === "box") {
             Outer.classList.add(CurrentMenu.Type + "-outer");
             Icon.classList.add(CurrentMenu.Type + "-icon");
@@ -198,6 +214,7 @@ function MakeMenu() {
             Outer.onclick = function() {
                 window.open(CurrentMenu.Link + "index.html", "_self")
             }
+            Arrow.textContent = "📄"
         }
         else {
             Outer.onclick = function() {
@@ -208,7 +225,6 @@ function MakeMenu() {
         Icon.textContent = CurrentMenu.Emoji;
         Title.textContent = CurrentMenu.Title;
         Title.style.color = CurrentMenu.Color
-        Arrow.textContent = "➜"
         Arrow.style.color = CurrentMenu.Color
 
         Outer.setAttribute("menu-id", CurrentMenu.MenuID)
