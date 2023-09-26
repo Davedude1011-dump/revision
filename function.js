@@ -130,7 +130,7 @@ var Menus = [
     {Type: "box", Emoji: "📊", Title: "Maths", Color: "#E1D8EC", MenuID: 0, OnclickID: 2},
     {Type: "menu-direct", Emoji: "🔢", Title: "Law of Indices", MenuID: 2, OnclickID: 10, Link: "pages/maths/indices/"},
     {Type: "menu", Emoji: "∛", Title: "Surds", MenuID: 2, OnclickID: 11},
-    {Type: "menu-direct", Emoji: "📖", Title: "Overview", MenuID: 11, OnclickID: 31, Link: "pages/maths/surds-overview/"},
+    {Type: "menu-direct", Emoji: "📖", Title: "Surds - Overview", MenuID: 11, OnclickID: 31, Link: "pages/maths/surds-overview/"},
     {Type: "menu-direct", Emoji: "½", Title: "Rationalising Surds", MenuID: 11, OnclickID: 32, Link: "pages/maths/rationalising-surds/"},
     {Type: "menu-direct", Emoji: "(x)(y)", Title: "Expanding Brackets", MenuID: 2, OnclickID: 26, Link: "pages/maths/expanding-brackets/"},
     {Type: "menu-direct", Emoji: "🧭", Title: "Bearings", MenuID: 2, OnclickID: 50, Link: "pages/maths/bearings/"},
@@ -154,6 +154,8 @@ var Menus = [
     {Type: "box", Emoji: "⚗️", Title: "Chemistry", Color: "#aeddff", MenuID: 0, OnclickID: 4},
     {Type: "menu-direct", Emoji: "⚛️", Title: "Ionic Bonds", MenuID: 4, OnclickID: 27, Link: "pages/chemistry/ionic-bonds/"},
     {Type: "menu-direct", Emoji: "⚛️", Title: "Covalent Bonds", MenuID: 4, OnclickID: 38, Link: "pages/chemistry/covalent-bonds/"},
+    {Type: "menu-direct", Emoji: "⚪", Title: "Covalent Structures", MenuID: 4, OnclickID: 52, Link: "pages/chemistry/covalent-structures/"},
+    {Type: "menu-direct", Emoji: "🔴", Title: "Allotropes", MenuID: 4, OnclickID: 53, Link: "pages/chemistry/allotropes/"},
 
 
     {Type: "box", Emoji: "🧲", Title: "Physics", Color: "#F8312F", MenuID: 0, OnclickID: 5},
