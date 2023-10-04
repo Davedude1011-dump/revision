@@ -134,6 +134,13 @@ var Menus = [
     {Type: "menu-direct", Emoji: "½", Title: "Rationalising Surds", MenuID: 11, OnclickID: 32, Link: "pages/maths/rationalising-surds/"},
     {Type: "menu-direct", Emoji: "(x)(y)", Title: "Expanding Brackets", MenuID: 2, OnclickID: 26, Link: "pages/maths/expanding-brackets/"},
     {Type: "menu-direct", Emoji: "🧭", Title: "Bearings", MenuID: 2, OnclickID: 50, Link: "pages/maths/bearings/"},
+    {Type: "menu", Emoji: "📈", Title: "Lines", MenuID: 2, OnclickID: 54},
+    {Type: "menu-direct", Emoji: "📈", Title: "Equation of a line", MenuID: 54, OnclickID: 55, Link: "pages/maths/equation-of-a-line/"},
+    {Type: "menu-direct", Emoji: "🗠", Title: "Equation from 2 points", MenuID: 54, OnclickID: 56, Link: "pages/maths/equation-from-2-points/"},
+    {Type: "menu-direct", Emoji: "📉", Title: "X and Y intercepts", MenuID: 54, OnclickID: 57, Link: "pages/maths/x-y-intercept/"},
+    {Type: "menu-direct", Emoji: "📊", Title: "Parallel lines", MenuID: 54, OnclickID: 58, Link: "pages/maths/parallel-lines/"},
+    {Type: "menu-direct", Emoji: "❌", Title: "Perpendicular lines", MenuID: 54, OnclickID: 59, Link: "pages/maths/perpendicular-lines/"},
+    {Type: "menu-direct", Emoji: "🧮", Title: "Simultaneous Equations", MenuID: 2, OnclickID: 60, Link: "pages/maths/sim-equations/"},
 
     {Type: "box", Emoji: "🚀", Title: "Maths+", Color: "#ff8257", MenuID: 0, OnclickID: 33},
     {Type: "menu", Emoji: "📈", Title: "Binomial Expansion", MenuID: 33, OnclickID: 34},
@@ -184,6 +191,10 @@ var Menus = [
     {Type: "menu", Emoji: "⛰️", Title: "Earthquakes", MenuID: 7, OnclickID: 28, Link: "pages/geography/earthquake/"},
     {Type: "menu-direct", Emoji: "🏞️", Title: "Overview", MenuID: 28, OnclickID: 29, Link: "pages/geography/earthquake-overview/"},
     {Type: "menu-direct", Emoji: "🏞️", Title: "LIC vs HIC", MenuID: 28, OnclickID: 30, Link: "pages/geography/earthquake-lic-hic/"},
+
+
+    {Type: "box", Emoji: "📖", Title: "English", Color: "#00a6ed", MenuID: 0, OnclickID: 61},
+    {Type: "menu-direct", Emoji: "📒", Title: "The Inspector Calls Study Guide", MenuID: 61, OnclickID: 62, Link: "pages/english/the-inspector-calls-study-guide/"},
 
 
     {Type: "box", Emoji: "🗒️", Title: "Notepad", Color: "#f3eef8", MenuID: 0, OnclickID: 8, Link: "pages/special/notepad/"},
