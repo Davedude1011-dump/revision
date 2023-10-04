@@ -194,7 +194,8 @@ var Menus = [
 
 
     {Type: "box", Emoji: "📖", Title: "English", Color: "#00a6ed", MenuID: 0, OnclickID: 61},
-    {Type: "menu-direct", Emoji: "📒", Title: "The Inspector Calls Study Guide", MenuID: 61, OnclickID: 62, Link: "pages/english/the-inspector-calls-study-guide/"},
+    {Type: "menu-direct", Emoji: "🤖", Title: "Essay writing bot", MenuID: 61, OnclickID: 62, Link: "pages/english/essay-bot/"},
+    {Type: "menu-direct", Emoji: "📒", Title: "The Inspector Calls Study Guide", MenuID: 61, OnclickID: 63, Link: "pages/english/the-inspector-calls-study-guide/"},
 
 
     {Type: "box", Emoji: "🗒️", Title: "Notepad", Color: "#f3eef8", MenuID: 0, OnclickID: 8, Link: "pages/special/notepad/"},
