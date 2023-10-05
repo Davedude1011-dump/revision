@@ -147,6 +147,10 @@ var Menus = [
     {Type: "menu-direct", Emoji: "ⓘ", Title: "Binomial Expansion - Overview", MenuID: 34, OnclickID: 35, Link: "pages/maths+/binomial-expansion/"},
     {Type: "menu-direct", Emoji: "△", Title: "Pascals Triangle - Info", MenuID: 34, OnclickID: 36, Link: "pages/maths+/pascals-triangle/"},
     {Type: "menu-direct", Emoji: "▲", Title: "Pascals Triangle - Visual", MenuID: 34, OnclickID: 37, Link: "pages/maths+/pascals-triangle-visual/"},
+    {Type: "menu", Emoji: "📉", Title: "Trigonometry Functions", MenuID: 33, OnclickID: 69},
+    {Type: "menu-direct", Emoji: "Θ", Title: "Sin", MenuID: 69, OnclickID: 70, Link: "pages/maths+/sin/"},
+    {Type: "menu-direct", Emoji: "Θ", Title: "Cos", MenuID: 69, OnclickID: 71, Link: "pages/maths+/cos/"},
+    {Type: "menu-direct", Emoji: "Θ", Title: "Tan", MenuID: 69, OnclickID: 72, Link: "pages/maths+/tan/"},
 
 
     {Type: "box", Emoji: "🦠", Title: "Biology", Color: "#00F397", MenuID: 0, OnclickID: 3},
