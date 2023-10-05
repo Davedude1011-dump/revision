@@ -154,8 +154,12 @@ var Menus = [
     {Type: "menu-direct", Emoji: "🧬", Title: "Mitosis", MenuID: 13, OnclickID: 14, Link: "pages/biology/mitosis/"},
     {Type: "menu-direct", Emoji: "🦠", Title: "Cytokinesis", MenuID: 13, OnclickID: 15, Link: "pages/biology/cytokinesis/"},
     {Type: "menu-direct", Emoji: "🦠", Title: "Stem Cells", MenuID: 3, OnclickID: 16, Link: "pages/biology/stem-cells/"},
-    {Type: "menu", Emoji: "🫀", Title: "Enzymes", MenuID: 3, OnclickID: 47},
-    {Type: "menu-direct", Emoji: "🌮", Title: "main digestive enzymes", MenuID: 47, OnclickID: 48, Link: "pages/biology/main-digestive-enzymes/"},
+    {Type: "menu", Emoji: "🍪", Title: "Enzymes", MenuID: 3, OnclickID: 47},
+    {Type: "menu-direct", Emoji: "🍟", Title: "Enzymes Overview and Info", MenuID: 47, OnclickID: 68, Link: "pages/biology/enzyme-info/"},
+    {Type: "menu-direct", Emoji: "🌮", Title: "Main Digestive Enzymes", MenuID: 47, OnclickID: 48, Link: "pages/biology/main-digestive-enzymes/"},
+    {Type: "menu-direct", Emoji: "🌯", Title: "Enzymes - Lock and Key", MenuID: 47, OnclickID: 66, Link: "pages/biology/enzyme-lock-and-key/"},
+    {Type: "menu-direct", Emoji: "🥞", Title: "Enzymes - Induced Fit", MenuID: 47, OnclickID: 67, Link: "pages/biology/enzyme-induced-fit/"},
+    {Type: "menu-direct", Emoji: "🍔", Title: "The Digestive Organ System", MenuID: 3, OnclickID: 65, Link: "pages/biology/digestive-organ-system/"},
 
 
     {Type: "box", Emoji: "⚗️", Title: "Chemistry", Color: "#aeddff", MenuID: 0, OnclickID: 4},
@@ -175,6 +179,7 @@ var Menus = [
 
 
     {Type: "box", Emoji: "🖥️", Title: "Computing", Color: "#26c9fc", MenuID: 0, OnclickID: 6},
+    {Type: "menu-direct", Emoji: "🖥️", Title: "Python IDE", MenuID: 6, OnclickID: 64, Link: "pages/computing/python-ide/"},
     {Type: "menu-direct", Emoji: "📦", Title: "Data Storage", MenuID: 6, OnclickID: 9, Link: "pages/computing/data-storage/"},
     {Type: "menu", Emoji: "µ", Title: "Unit Conversion", MenuID: 6, OnclickID: 44},
     {Type: "menu-direct", Emoji: "✨", Title: "Denary ⇆ Binary", MenuID: 44, OnclickID: 45, Link: "pages/computing/denary-binary/"},
@@ -191,6 +196,7 @@ var Menus = [
     {Type: "menu", Emoji: "⛰️", Title: "Earthquakes", MenuID: 7, OnclickID: 28, Link: "pages/geography/earthquake/"},
     {Type: "menu-direct", Emoji: "🏞️", Title: "Overview", MenuID: 28, OnclickID: 29, Link: "pages/geography/earthquake-overview/"},
     {Type: "menu-direct", Emoji: "🏞️", Title: "LIC vs HIC", MenuID: 28, OnclickID: 30, Link: "pages/geography/earthquake-lic-hic/"},
+    {Type: "menu-direct", Emoji: "💨", Title: "Atmospheric Air Circulation and Wind Cells", MenuID: 7, OnclickID: 68, Link: "pages/geography/air-circulation-and-cells/"},
 
 
     {Type: "box", Emoji: "📖", Title: "English", Color: "#00a6ed", MenuID: 0, OnclickID: 61},
