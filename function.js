@@ -151,6 +151,7 @@ var Menus = [
     {Type: "menu-direct", Emoji: "Θ", Title: "Sin", MenuID: 69, OnclickID: 70, Link: "pages/maths+/sin/"},
     {Type: "menu-direct", Emoji: "Θ", Title: "Cos", MenuID: 69, OnclickID: 71, Link: "pages/maths+/cos/"},
     {Type: "menu-direct", Emoji: "Θ", Title: "Tan", MenuID: 69, OnclickID: 72, Link: "pages/maths+/tan/"},
+    {Type: "link-direct", Emoji: "🎨", Title: "Desmos Sandbox", MenuID: 69, OnclickID: 73, Link: "https://www.desmos.com/calculator/lkautkqylz"},
 
 
     {Type: "box", Emoji: "🦠", Title: "Biology", Color: "#00F397", MenuID: 0, OnclickID: 3},
@@ -239,6 +240,12 @@ function MakeMenu() {
                 window.open(CurrentMenu.Link + "index.html", "_self")
             }
             Arrow.textContent = "📄"
+        }
+        else if (CurrentMenu.Type === "link-direct") {
+            Outer.onclick = function() {
+                window.open(CurrentMenu.Link, "_self")
+            }
+            Arrow.textContent = "✈️"
         }
         else {
             Outer.onclick = function() {
