@@ -143,6 +143,7 @@ var Menus = [
     {Type: "menu-direct", Emoji: "🧮", Title: "Simultaneous Equations", MenuID: 2, OnclickID: 60, Link: "pages/maths/sim-equations/"},
 
     {Type: "box", Emoji: "🚀", Title: "Maths+", Color: "#ff8257", MenuID: 0, OnclickID: 33},
+    {Type: "link-direct", Emoji: "║", Title: "Desmos", MenuID: 33, OnclickID: 77, Link: "https://www.desmos.com/calculator/"},
     {Type: "menu", Emoji: "📈", Title: "Binomial Expansion", MenuID: 33, OnclickID: 34},
     {Type: "menu-direct", Emoji: "ⓘ", Title: "Binomial Expansion - Overview", MenuID: 34, OnclickID: 35, Link: "pages/maths+/binomial-expansion/"},
     {Type: "menu-direct", Emoji: "△", Title: "Pascals Triangle - Info", MenuID: 34, OnclickID: 36, Link: "pages/maths+/pascals-triangle/"},
@@ -151,7 +152,8 @@ var Menus = [
     {Type: "menu-direct", Emoji: "Θ", Title: "Sin", MenuID: 69, OnclickID: 70, Link: "pages/maths+/sin/"},
     {Type: "menu-direct", Emoji: "Θ", Title: "Cos", MenuID: 69, OnclickID: 71, Link: "pages/maths+/cos/"},
     {Type: "menu-direct", Emoji: "Θ", Title: "Tan", MenuID: 69, OnclickID: 72, Link: "pages/maths+/tan/"},
-    {Type: "link-direct", Emoji: "🎨", Title: "Desmos Sandbox", MenuID: 69, OnclickID: 73, Link: "https://www.desmos.com/calculator/lkautkqylz"},
+    {Type: "menu-direct", Emoji: "📦", Title: "Trig Question Generator", MenuID: 69, OnclickID: 76, Link: "pages/maths+/trig-functions-gen/"},
+    {Type: "link-direct", Emoji: "║", Title: "Desmos - Trigonometry", MenuID: 69, OnclickID: 73, Link: "https://www.desmos.com/calculator/lkautkqylz"},
 
 
     {Type: "box", Emoji: "🦠", Title: "Biology", Color: "#00F397", MenuID: 0, OnclickID: 3},
@@ -207,7 +209,7 @@ var Menus = [
 
 
     {Type: "box", Emoji: "📖", Title: "English", Color: "#00a6ed", MenuID: 0, OnclickID: 61},
-    {Type: "menu-direct", Emoji: "🤖", Title: "Essay writing bot", MenuID: 61, OnclickID: 62, Link: "pages/english/essay-bot/"},
+    {Type: "menu-direct", Emoji: "🤖", Title: "Writing Review Bot", MenuID: 61, OnclickID: 62, Link: "pages/english/essay-bot/"},
     {Type: "menu-direct", Emoji: "📒", Title: "The Inspector Calls Study Guide", MenuID: 61, OnclickID: 63, Link: "pages/english/the-inspector-calls-study-guide/"},
 
 
