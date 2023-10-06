@@ -168,8 +168,10 @@ var Menus = [
 
 
     {Type: "box", Emoji: "⚗️", Title: "Chemistry", Color: "#aeddff", MenuID: 0, OnclickID: 4},
-    {Type: "menu-direct", Emoji: "⚛️", Title: "Ionic Bonds", MenuID: 4, OnclickID: 27, Link: "pages/chemistry/ionic-bonds/"},
-    {Type: "menu-direct", Emoji: "⚛️", Title: "Covalent Bonds", MenuID: 4, OnclickID: 38, Link: "pages/chemistry/covalent-bonds/"},
+    {Type: "menu", Emoji: "🪢", Title: "Bonds", MenuID: 4, OnclickID: 74},
+    {Type: "menu-direct", Emoji: "⚛️", Title: "Ionic Bonds", MenuID: 74, OnclickID: 27, Link: "pages/chemistry/ionic-bonds/"},
+    {Type: "menu-direct", Emoji: "⚛️", Title: "Covalent Bonds", MenuID: 74, OnclickID: 38, Link: "pages/chemistry/covalent-bonds/"},
+    {Type: "menu-direct", Emoji: "⚛️", Title: "Metallic Bonds", MenuID: 74, OnclickID: 75, Link: "pages/chemistry/metallic-bonds/"},
     {Type: "menu-direct", Emoji: "⚪", Title: "Covalent Structures", MenuID: 4, OnclickID: 52, Link: "pages/chemistry/covalent-structures/"},
     {Type: "menu-direct", Emoji: "🔴", Title: "Allotropes", MenuID: 4, OnclickID: 53, Link: "pages/chemistry/allotropes/"},
 
