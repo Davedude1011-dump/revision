@@ -141,6 +141,12 @@ var Menus = [
     {Type: "menu-direct", Emoji: "📊", Title: "Parallel lines", MenuID: 54, OnclickID: 58, Link: "pages/maths/parallel-lines/"},
     {Type: "menu-direct", Emoji: "❌", Title: "Perpendicular lines", MenuID: 54, OnclickID: 59, Link: "pages/maths/perpendicular-lines/"},
     {Type: "menu-direct", Emoji: "🧮", Title: "Simultaneous Equations", MenuID: 2, OnclickID: 60, Link: "pages/maths/sim-equations/"},
+    {Type: "menu", Emoji: "⌒", Title: "Quadratics", MenuID: 2, OnclickID: 80},
+    {Type: "menu-direct", Emoji: "🟩", Title: "Quadratic Equations Overview", MenuID: 80, OnclickID: 81, Link: "pages/maths/quadratic-equation-overview/"},
+    {Type: "menu-direct", Emoji: "⏹️", Title: "Factorising Quadratics with a Coefficient of 1", MenuID: 80, OnclickID: 82, Link: "pages/maths/factorising-one-x/"},
+    {Type: "menu-direct", Emoji: "🟦", Title: "Factorising Quadratics with a Coefficient of more than 1", MenuID: 80, OnclickID: 83, Link: "pages/maths/factorising-more-x/"},
+    {Type: "menu-direct", Emoji: "🔲", Title: "Completing the Square with a Coefficient of 1", MenuID: 80, OnclickID: 84, Link: "pages/maths/completing-square-one-x/"},
+    {Type: "menu-direct", Emoji: "⬛", Title: "Completing the Square with a Coefficient of more than 1", MenuID: 80, OnclickID: 85, Link: "pages/maths/completing-square-more-x/"},
 
     {Type: "box", Emoji: "🚀", Title: "Maths+", Color: "#ff8257", MenuID: 0, OnclickID: 33},
     {Type: "link-direct", Emoji: "║", Title: "Desmos", MenuID: 33, OnclickID: 77, Link: "https://www.desmos.com/calculator/"},
@@ -188,6 +194,8 @@ var Menus = [
 
 
     {Type: "box", Emoji: "🖥️", Title: "Computing", Color: "#26c9fc", MenuID: 0, OnclickID: 6},
+    {Type: "link-direct", Emoji: "🥷", Title: "Know It All Ninja", MenuID: 6, OnclickID: 79, Link: "https://www.knowitallninja.com"},
+    {Type: "link-direct", Emoji: "🧠", Title: "Smart Revise", MenuID: 6, OnclickID: 80, Link: "https://smartrevise.online"},
     {Type: "menu-direct", Emoji: "🖥️", Title: "Python IDE", MenuID: 6, OnclickID: 64, Link: "pages/computing/python-ide/"},
     {Type: "menu-direct", Emoji: "📦", Title: "Data Storage", MenuID: 6, OnclickID: 9, Link: "pages/computing/data-storage/"},
     {Type: "menu", Emoji: "µ", Title: "Unit Conversion", MenuID: 6, OnclickID: 44},
@@ -206,6 +214,7 @@ var Menus = [
     {Type: "menu-direct", Emoji: "🏞️", Title: "Overview", MenuID: 28, OnclickID: 29, Link: "pages/geography/earthquake-overview/"},
     {Type: "menu-direct", Emoji: "🏞️", Title: "LIC vs HIC", MenuID: 28, OnclickID: 30, Link: "pages/geography/earthquake-lic-hic/"},
     {Type: "menu-direct", Emoji: "💨", Title: "Atmospheric Air Circulation and Wind Cells", MenuID: 7, OnclickID: 68, Link: "pages/geography/air-circulation-and-cells/"},
+    {Type: "menu-direct", Emoji: "🌀", Title: "Hurricanes", MenuID: 7, OnclickID: 78, Link: "pages/geography/hurricanes/"},
 
 
     {Type: "box", Emoji: "📖", Title: "English", Color: "#00a6ed", MenuID: 0, OnclickID: 61},
