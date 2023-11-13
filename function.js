@@ -160,6 +160,9 @@ var Menus = [
     {Type: "menu-direct", Emoji: "Θ", Title: "Tan", MenuID: 69, OnclickID: 72, Link: "pages/maths+/tan/"},
     {Type: "menu-direct", Emoji: "📦", Title: "Trig Question Generator", MenuID: 69, OnclickID: 76, Link: "pages/maths+/trig-functions-gen/"},
     {Type: "link-direct", Emoji: "║", Title: "Desmos - Trigonometry", MenuID: 69, OnclickID: 73, Link: "https://www.desmos.com/calculator/lkautkqylz"},
+    {Type: "menu", Emoji: "x", Title: "Polynomials", MenuID: 33, OnclickID: 86},
+    {Type: "menu-direct", Emoji: "÷", Title: "Polynomial Long division", MenuID: 86, OnclickID: 87, Link: "pages/maths+/polynomial-long-division/"},
+    {Type: "menu-direct", Emoji: "📉", Title: "Finding the Roots of Cubic graphs", MenuID: 86, OnclickID: 88, Link: "pages/maths+/roots-of-cubic-graphs/"},
 
 
     {Type: "box", Emoji: "🦠", Title: "Biology", Color: "#00F397", MenuID: 0, OnclickID: 3},
@@ -173,6 +176,7 @@ var Menus = [
     {Type: "menu-direct", Emoji: "🌯", Title: "Enzymes - Lock and Key", MenuID: 47, OnclickID: 66, Link: "pages/biology/enzyme-lock-and-key/"},
     {Type: "menu-direct", Emoji: "🥞", Title: "Enzymes - Induced Fit", MenuID: 47, OnclickID: 67, Link: "pages/biology/enzyme-induced-fit/"},
     {Type: "menu-direct", Emoji: "🍔", Title: "The Digestive Organ System", MenuID: 3, OnclickID: 65, Link: "pages/biology/digestive-organ-system/"},
+    {Type: "menu-direct", Emoji: "🫀", Title: "Blood Vessels", MenuID: 3, OnclickID: 89, Link: "pages/biology/blood-vessels/"},
 
 
     {Type: "box", Emoji: "⚗️", Title: "Chemistry", Color: "#aeddff", MenuID: 0, OnclickID: 4},
@@ -182,21 +186,26 @@ var Menus = [
     {Type: "menu-direct", Emoji: "⚛️", Title: "Metallic Bonds", MenuID: 74, OnclickID: 75, Link: "pages/chemistry/metallic-bonds/"},
     {Type: "menu-direct", Emoji: "⚪", Title: "Covalent Structures", MenuID: 4, OnclickID: 52, Link: "pages/chemistry/covalent-structures/"},
     {Type: "menu-direct", Emoji: "🔴", Title: "Allotropes", MenuID: 4, OnclickID: 53, Link: "pages/chemistry/allotropes/"},
+    {Type: "menu", Emoji: "🧪", Title: "Chemical Reactions", MenuID: 4, OnclickID: 90},
+    {Type: "menu-direct", Emoji: "🧂", Title: "Neutralization Reactions", MenuID: 90, OnclickID: 91, Link: "pages/chemistry/neutralization-reaction/"},
+    {Type: "menu-direct", Emoji: "🔀", Title: "Displacement Reactions", MenuID: 90, OnclickID: 92, Link: "pages/chemistry/displacement-reaction/"},
 
 
     {Type: "box", Emoji: "🧲", Title: "Physics", Color: "#F8312F", MenuID: 0, OnclickID: 5},
-    {Type: "menu-direct", Emoji: "📦", Title: "Formula Storage", MenuID: 5, OnclickID: 51, Link: "pages/physics/formula-storage/"},
+    {Type: "menu-direct", Emoji: "📦", Title: "Formula Sheet", MenuID: 5, OnclickID: 51, Link: "pages/physics/formula-storage/"},
     {Type: "menu", Emoji: "🔥", Title: "Heat / Energy transfer", MenuID: 5, OnclickID: 19},
     {Type: "menu-direct", Emoji: "💥", Title: "Infra-red radiation", MenuID: 19, OnclickID: 20, Link: "pages/physics/infra-red-radiation/"},
     {Type: "menu-direct", Emoji: "🔥", Title: "Conduction", MenuID: 19, OnclickID: 21, Link: "pages/physics/conduction/"},
     {Type: "menu-direct", Emoji: "💨", Title: "Convection", MenuID: 19, OnclickID: 22, Link: "pages/physics/convection/"},
     {Type: "menu-direct", Emoji: "♨️", Title: "Specific Heat Capacity", MenuID: 5, OnclickID: 49, Link: "pages/physics/specific-heat-capacity/"},
+    {Type: "menu-direct", Emoji: "⚡", Title: "Energy Sources", MenuID: 5, OnclickID: 93, Link: "pages/physics/energy-sources/"},
 
 
     {Type: "box", Emoji: "🖥️", Title: "Computing", Color: "#26c9fc", MenuID: 0, OnclickID: 6},
-    {Type: "link-direct", Emoji: "🥷", Title: "Know It All Ninja", MenuID: 6, OnclickID: 79, Link: "https://www.knowitallninja.com"},
-    {Type: "link-direct", Emoji: "🧠", Title: "Smart Revise", MenuID: 6, OnclickID: 80, Link: "https://smartrevise.online"},
-    {Type: "menu-direct", Emoji: "🖥️", Title: "Python IDE", MenuID: 6, OnclickID: 64, Link: "pages/computing/python-ide/"},
+    {Type: "menu", Emoji: "🖥️", Title: "Tools", MenuID: 6, OnclickID: 98},
+    {Type: "link-direct", Emoji: "🥷", Title: "Know It All Ninja", MenuID: 98, OnclickID: 79, Link: "https://www.knowitallninja.com"},
+    {Type: "link-direct", Emoji: "🧠", Title: "Smart Revise", MenuID: 98, OnclickID: 80, Link: "https://smartrevise.online"},
+    {Type: "menu-direct", Emoji: "🖥️", Title: "Python IDE", MenuID: 98, OnclickID: 64, Link: "pages/computing/python-ide/"},
     {Type: "menu-direct", Emoji: "📦", Title: "Data Storage", MenuID: 6, OnclickID: 9, Link: "pages/computing/data-storage/"},
     {Type: "menu", Emoji: "µ", Title: "Unit Conversion", MenuID: 6, OnclickID: 44},
     {Type: "menu-direct", Emoji: "✨", Title: "Denary ⇆ Binary", MenuID: 44, OnclickID: 45, Link: "pages/computing/denary-binary/"},
@@ -206,15 +215,22 @@ var Menus = [
     {Type: "menu-direct", Emoji: "-01", Title: "Binary Subtraction", MenuID: 39, OnclickID: 41, Link: "pages/computing/binary-subtraction/"},
     {Type: "menu-direct", Emoji: "←01→", Title: "Binary Shifting", MenuID: 39, OnclickID: 42, Link: "pages/computing/binary-shifting/"},
     {Type: "menu-direct", Emoji: "01?", Title: "Binary Overflow", MenuID: 39, OnclickID: 43, Link: "pages/computing/binary-overflow/"},
+    {Type: "menu", Emoji: "📦", Title: "Specific Storage", MenuID: 6, OnclickID: 94},
+    {Type: "menu-direct", Emoji: "🔤", Title: "Storing Text", MenuID: 94, OnclickID: 95, Link: "pages/computing/storing-text/"},
+    {Type: "menu-direct", Emoji: "🖼️", Title: "Storing Images", MenuID: 94, OnclickID: 96, Link: "pages/computing/storing-images/"},
+    {Type: "menu-direct", Emoji: "🔊", Title: "Storing Audio", MenuID: 94, OnclickID: 97, Link: "pages/computing/storing-audio/"},
 
 
     {Type: "box", Emoji: "🌍", Title: "Geography", Color: "#00d26a", MenuID: 0, OnclickID: 7},
     {Type: "menu-direct", Emoji: "🏞️", Title: "Continental Drift & Tectonic Plates", MenuID: 7, OnclickID: 25, Link: "pages/geography/continental-drift/"},
-    {Type: "menu", Emoji: "⛰️", Title: "Earthquakes", MenuID: 7, OnclickID: 28, Link: "pages/geography/earthquake/"},
+    {Type: "menu", Emoji: "🌪️", Title: "Natural Disasters", MenuID: 7, OnclickID: 99},
+    {Type: "menu", Emoji: "⛰️", Title: "Earthquakes", MenuID: 99, OnclickID: 28},
     {Type: "menu-direct", Emoji: "🏞️", Title: "Overview", MenuID: 28, OnclickID: 29, Link: "pages/geography/earthquake-overview/"},
     {Type: "menu-direct", Emoji: "🏞️", Title: "LIC vs HIC", MenuID: 28, OnclickID: 30, Link: "pages/geography/earthquake-lic-hic/"},
+    {Type: "menu-direct", Emoji: "🌀", Title: "Hurricanes", MenuID: 99, OnclickID: 78, Link: "pages/geography/hurricanes/"},
+    {Type: "menu-direct", Emoji: "🌋", Title: "Volcanoes", MenuID: 99, OnclickID: 100, Link: "pages/geography/volcanoes/"},
     {Type: "menu-direct", Emoji: "💨", Title: "Atmospheric Air Circulation and Wind Cells", MenuID: 7, OnclickID: 68, Link: "pages/geography/air-circulation-and-cells/"},
-    {Type: "menu-direct", Emoji: "🌀", Title: "Hurricanes", MenuID: 7, OnclickID: 78, Link: "pages/geography/hurricanes/"},
+    {Type: "menu-direct", Emoji: "🗺", Title: "Plate Margins", MenuID: 7, OnclickID: 101, Link: "pages/geography/plate-margins/"},
 
 
     {Type: "box", Emoji: "📖", Title: "English", Color: "#00a6ed", MenuID: 0, OnclickID: 61},
@@ -225,6 +241,7 @@ var Menus = [
     {Type: "box", Emoji: "🗒️", Title: "Notepad", Color: "#f3eef8", MenuID: 0, OnclickID: 8, Link: "pages/special/notepad/"},
 ]
 
+AllTopics = []
 function MakeMenu() {
     for (let i = 0; i < Menus.length; i++) {
         let CurrentMenu = Menus[i];
@@ -265,6 +282,9 @@ function MakeMenu() {
                 OpenMenu(`${CurrentMenu.OnclickID}`, this)
             }
         }
+        if (CurrentMenu.Type === "menu-direct") {
+            AllTopics.push(CurrentMenu.Title)
+        }
 
         Icon.textContent = CurrentMenu.Emoji;
         Title.textContent = CurrentMenu.Title;
@@ -281,6 +301,7 @@ function MakeMenu() {
         document.querySelector(".box-container").appendChild(Outer);
     }
 }
+console.log(AllTopics)
 MakeMenu()
 applyAlternateBackgroundColors();
 const elements = document.querySelectorAll('[menu-id]'); // adds spacing
