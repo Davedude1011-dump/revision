@@ -247,6 +247,13 @@ var Menus = [
 
 
     {Type: "box", Emoji: "⚒️", Title: "D.T.", Color: "#B4ACBC", MenuID: 0, OnclickID: 103},
+    {Type: "menu", Emoji: "📦", Title: "Paper and Board", MenuID: 103, OnclickID: 117},
+    {Type: "menu-direct", Emoji: "🧱", Title: "Structure", MenuID: 117, OnclickID: 118, Link: "pages/dt/paper-and-board-structure/"},
+    {Type: "menu-direct", Emoji: "📰", Title: "Different Types", MenuID: 117, OnclickID: 119, Link: "pages/dt/paper-and-board-different-types/"},
+    {Type: "menu-direct", Emoji: "✨", Title: "Uses and Applications", MenuID: 117, OnclickID: 120, Link: "pages/dt/paper-and-board-uses-and-applications/"},
+    {Type: "menu-direct", Emoji: "🦾", Title: "Manufacturing Process", MenuID: 117, OnclickID: 121, Link: "pages/dt/paper-and-board-manufacturing-process/"},
+    {Type: "menu-direct", Emoji: "⚒️", Title: "Innovations and Trends", MenuID: 117, OnclickID: 122, Link: "pages/dt/paper-and-board-innovations-and-trends/"},
+    {Type: "menu-direct", Emoji: "⚡", Title: "Laser Cutting", MenuID: 103, OnclickID: 123, Link: "pages/dt/laser-cutting/"},
 
     
     {Type: "box", Emoji: "🌐", Title: "Spanish Chatbot", Color: "#83CBFF", MenuID: 0, OnclickID: 104, Link: "pages/special/spanish-chatbot/"},
