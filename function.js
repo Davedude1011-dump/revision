@@ -227,6 +227,7 @@ var Menus = [
 
 
     {Type: "box", Emoji: "🌍", Title: "Geography", Color: "#00d26a", MenuID: 0, OnclickID: 7},
+    {Type: "menu-direct", Emoji: "🗺", Title: "Map Game", MenuID: 7, OnclickID: 130, Link: "pages/geography/map-game/"},
     {Type: "menu-direct", Emoji: "🏞️", Title: "Continental Drift & Tectonic Plates", MenuID: 7, OnclickID: 25, Link: "pages/geography/continental-drift/"},
     {Type: "menu", Emoji: "🌪️", Title: "Natural Disasters", MenuID: 7, OnclickID: 99},
     {Type: "menu", Emoji: "⛰️", Title: "Earthquakes", MenuID: 99, OnclickID: 28},
@@ -256,7 +257,13 @@ var Menus = [
     {Type: "menu-direct", Emoji: "⚡", Title: "Laser Cutting", MenuID: 103, OnclickID: 123, Link: "pages/dt/laser-cutting/"},
 
     
-    {Type: "box", Emoji: "🌐", Title: "Spanish Chatbot", Color: "#83CBFF", MenuID: 0, OnclickID: 104, Link: "pages/special/spanish-chatbot/"},
+    {Type: "box", Emoji: "🌐", Title: "Spanish", Color: "#83CBFF", MenuID: 0, OnclickID: 104},
+    {Type: "menu-direct", Emoji: "🤖", Title: "Spanish Chatbot", MenuID: 104, OnclickID: 124, Link: "pages/special/spanish-chatbot/"},
+    {Type: "menu-direct", Emoji: "🧑", Title: "Pronouns", MenuID: 104, OnclickID: 125, Link: "pages/spanish/spanish-pronouns/"},
+    {Type: "menu", Emoji: "🏃", Title: "Verbs", MenuID: 104, OnclickID: 126},
+    {Type: "menu-direct", Emoji: "⌛", Title: "Past", MenuID: 126, OnclickID: 127, Link: "pages/spanish/verbs-past/"},
+    {Type: "menu-direct", Emoji: "📱", Title: "Present", MenuID: 126, OnclickID: 128, Link: "pages/spanish/verbs-present/"},
+    {Type: "menu-direct", Emoji: "🛸", Title: "Future", MenuID: 126, OnclickID: 129, Link: "pages/spanish/verbs-future/"},
 
 
     {Type: "box", Emoji: "📖", Title: "English", Color: "#F3EEF8", MenuID: 0, OnclickID: 61},
@@ -294,7 +301,7 @@ function MakeMenu() {
             Title.classList.add("menu-title");
             Arrow.classList.add("menu-arrow");
         }
-        if (CurrentMenu.Type === "menu-direct" || CurrentMenu.Title == "AI Chatbot" || CurrentMenu.Title == "Spanish Chatbot" || CurrentMenu.Title == "Notepad") {
+        if (CurrentMenu.Type === "menu-direct" || CurrentMenu.Title == "AI Chatbot" || CurrentMenu.Title == "Notepad") {
             Outer.onclick = function() {
                 window.open(CurrentMenu.Link + "index.html", "_self")
             }
